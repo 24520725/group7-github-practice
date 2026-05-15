@@ -1,3 +1,4 @@
+# File quản lý thông tin sinh viên - Nhóm 7
 class Student:
     def __init__(self, name, student_id, score):
         self.name = name
