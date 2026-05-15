@@ -1,3 +1,4 @@
+# File quản lý thông tin sinh viên - Nhóm 7
 class Student:
     def __init__(self, name, student_id, score):
         self.name = name
@@ -18,3 +19,5 @@ class StudentManager:
             s for s in self.students
             if keyword in s.name.lower() or keyword in s.student_id.lower()
         ]
+        def delete_student(self, student_id):
+        self.students = [s for s in self.students if s.student_id != student_id]
